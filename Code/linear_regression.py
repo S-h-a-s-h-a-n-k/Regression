@@ -7,10 +7,6 @@ import matplotlib.pyplot as plt
 train_df=pd.read_csv("C:\\Users\\ayush\\mnist_train_small.csv",  header = None, prefix="var")
 test_df=pd.read_csv("C:\\Users\\ayush\\mnist_test.csv",  header = None, prefix="var")
 
-train_df
-
-test_df
-
 x_train=train_df.drop(['var0'], axis=1).values
 x_bias_train=np.ones((np.shape(x1)[0], 1))
 print(x_train)
@@ -20,7 +16,7 @@ y_train=y1.to_numpy()
 y_train=np.vstack(y_train)
 print((y_train))
 
-train_df.shape
+print(train_df.shape)
 
 print(x_train.shape)
 print(y_train.shape)
